@@ -1,0 +1,16 @@
+Install:
+
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt update
+sudo apt install fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf install flash
+sudo apt-get install tmux
+
+--------------------------------------------------------------------
+Sources:
+
+https://github.com/alacritty/alacritty
+https://github.com/oh-my-fish/oh-my-fish
+https://github.com/fish-shell/fish-shell
+https://github.com/tmux/tmux

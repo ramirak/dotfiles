@@ -1,0 +1,69 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+# %APPDATA%\alacritty\alacritty.yml
+
+window:
+  dimensions:
+    columns: 120
+    lines: 22
+
+  #position:
+  #  x: 0
+  #  y: 0
+
+  padding:
+    x: 5
+    y: 5
+
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background and no title bar buttons
+  decorations: full
+
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 1
+  
+  # Window title
+  title: Terminal pro plus
+
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: false
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#c5c8c6'
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+  style:
+       - _ Underline
+    # Cursor shape
+    #   - ▇ Block
+    #   - | Beam
+    #shape: Block
+    blinking: On
+    
+  blink_interval: 750
+
+live_config_reload: true
+
+shell:
+  program: wsl
+  args:
+    - tmux
+
+#working_directory: /
+
+mouse_bindings:
+  - { mouse: Right,                 action: Copy }
+#  - { mouse: Right,  mods: Control, action: ExpandSelection }
+#  - { mouse: Middle, mode: ~Vi,     action: PasteSelection  }
