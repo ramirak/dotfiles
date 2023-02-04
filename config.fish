@@ -8,7 +8,24 @@ alias ....="cd ../../.."
 alias ll="ls -lahS"
 alias sd="shred -n 3 -f -u -v -z"
 alias wp="cd /mnt/c/Projects"
+alias wh="cd /mnt/c/Users/ramir/"
+alias home="cd ~/"
 alias xx="exit"
+alias xxf="tmux kill-server"
+alias w="powershell.exe"
+alias x="tmux kill-window -t" 
+
+function x2
+  for i in ( seq 2 );
+    tmux kill-window -t $argv[1]
+  end
+end
+
+function a
+  for i in ( seq $argv[1] );  
+    tmux new-window
+  end
+end
 
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
